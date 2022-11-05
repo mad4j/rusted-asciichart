@@ -1,3 +1,11 @@
+use clap::Parser;
+
+#[derive(Parser, Debug)]
+#[command(author = "Daniele Olmisani")]
+#[command(version)]
+#[command(long_about = "Dump an old-fashioned ASCII chart on OS shell.")]
+struct Args {
+}
 
 const COLUMN_SEPARTOR: &str = " | ";
 
@@ -48,6 +56,9 @@ fn print_char_info(c: char) {
 }
 
 fn print_char_table() {
+
+    println!();
+
     for i in 0..64 {
 
         print!("{}", COLUMN_SEPARTOR);
@@ -61,5 +72,8 @@ fn print_char_table() {
 }
 
 fn main() {
+
+    let _args = Args::parse();
+
     print_char_table();
 }
