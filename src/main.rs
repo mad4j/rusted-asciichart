@@ -1,9 +1,7 @@
 use clap::Parser;
 
 #[derive(Parser, Debug)]
-#[command(author = "Daniele Olmisani")]
-#[command(version)]
-#[command(long_about = "Dump an old-fashioned ASCII chart on OS shell.")]
+#[command(author, version, about)]
 struct Args {
 }
 

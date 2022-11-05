@@ -2,7 +2,7 @@
 name = "asciichart"
 version = "0.1.0"
 edition = "2021"
-description = "dump old-fashioned ascii chart"
+description = "Dump an old-fashioned ASCII chart on OS shell."
 authors = ["Daniele Olmisani <daniele.olmisani@gmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
